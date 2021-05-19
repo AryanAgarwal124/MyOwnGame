@@ -78,6 +78,8 @@ function draw()
      
       score = score + Math.round(getFrameRate()/60); 
      
+     camera.position.x=character.x+250
+     
      
       if(keyDown("space") && character.y >= 345) {
       character.velocityY = -12;
@@ -166,6 +168,7 @@ function draw()
    character.collide( invisibleGround)
     
     background.velocityX=-6
+     camera.position.x=character.x+250
      
     
    spawnSkeletons();
